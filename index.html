@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Survey</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title" id="title">Learner Satisfaction</h1>
+      <p id="description" class="description">Thank you for helping us to improve the learning experience</p>
+  </header>
+  <form id="survey-form" class="survey">
+    <div class="name-input-box">
+    <label id="name-label" class="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="input" placeholder="First Last" required="">
+    </div>
+  <div class="email-input-box">  
+    <label id="email-label" class="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="input" placeholder="email@site.com" required="">
+  </div>
+  <div class="age-input-box">
+    <label id="number-label" class="number-label" for="number">Age</label>
+      <input type="number" name="age" id="number" class="input" min="7" max="110" placeholder="Age">
+  </div>
+  <div class="occupation-drop-down-box">
+    <p>What is your current occupation?</p>
+    <select id="occupation-drop-down" class="drop-down" name="occupation" required="">
+      <option disabled="" selected="" value="">Select current occupation</option>
+      <option value="unemployed">Unemployed</option>
+      <option value="part-time">Part-time worker / student</option>
+      <option value="worker">Full Time Worker</option>
+      <option value="student">Full Time Student</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="recommendation-radio-box">
+    <p>Would you recommend this course?</p>
+    <label>
+      <input name="user-recommend" class="radio" value="definitely" type="radio" checked="">Definitely</label>
+    <label>
+      <input name="user-recommend" class="radio" value="maybe" type="radio">Maybe</label>
+    <label><input name="user-recommend" value="not-sure" type="radio">Not sure</label>
+  </div>
+  <div class="understanding-radio-box">
+    <p>How much did this course improve your understanding of the topic?</p>
+    <label>
+      <input name="understanding" class="radio" value="not-at-all" type="radio" checked="">Not at All</label>
+    <label>
+      <input name="understanding" class="radio" value="not-really" type="radio">Not Really</label>
+    <label><input name="understanding" class="radio" value="unsure" type="radio">Unsure</label>
+    <label><input name="understanding" class="radio" value="somewhat" type="radio">Somewhat</label>
+    <label><input name="understanding" class="radio" value="very-much" type="radio">Very Much</label>
+  </div>
+  <div class="feature-drop-down-box">
+    <p>What was the best feature of the course?</p>
+    <select id="best-feature" class="drop-down" name="bestFeature" required="">
+      <option disabled="" selected="" value="">Select an option</option>
+      <option value="challenges">Quizes</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="feedback">Instructor Feedback</option>
+    </select>
+  </div>
+  <div class="improvements-checkbox-box">
+    <p>What would you like to see improved? (Check all that apply)</p>
+    <label><input name="improvements" class="checkbox" value="explinations" type="checkbox">Explinations<label>
+      <label>
+        <input name="improvements" class="checkbox" value="exercises" type="checkbox">Learning Exercises<label>
+      <label>
+        <input name="improvements" class="checkbox" value="quizes" type="checkbox">Quizes<label>
+      <label>
+        <input name="improvements" class="checkbox" value="projects" type="checkbox">Projects<label>
+      <label>
+        <input name="improvements" class="checkbox" value="readings" type="checkbox">Readings<label>
+      <label>
+        <input name="improvements" class="checkbox" value="videos" type="checkbox">Videos<label>
+      <label>
+        <input name="improvements" class="checkbox" value="feedback" type="checkbox">Instructor Feedback<label>
+      <label>
+        <input name="improvements" class="checkbox" value="involvment" type="checkbox">Peer Invovment<label>
+      <label>
+        <input name="improvements" class="checkbox" value="grading" type="checkbox">Grading Clarity<label>
+  </div>
+  <div class="comments-box">
+    <p>Any comments or suggestions? (Feel free to elaborate on your choices in the previous section)</p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+  </div>
+  <div class="submit-button-box">
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+  </div>
+  </form>
+  
+  
+</body>
+</html>
