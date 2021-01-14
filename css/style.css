@@ -91,6 +91,7 @@ body {
   padding: 0.2rem;
 }
 
+
 .label, p{
   font-size: 1.5rem;
   font-weight: bold;
@@ -119,7 +120,7 @@ label {
 
 
 .submit-button {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 0.75rem;
   background: #00ffe1;
@@ -127,5 +128,29 @@ label {
   border-width: 0.2rem;
   border-color: #000000;
   font-size: 1.5rem;
-  
+  font-weight: bold;  
+}
+
+/*Button Animations */
+
+.btn{
+  transition: all .2s;
+}
+
+.btn:hover{
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,.2);
+}
+
+.btn:active {
+  transform: translateY(0.1rem);
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,.2);
+}
+
+/* Input field hover animations */
+.input:hover,
+.drop-down:hover,
+.input-textarea:hover
+ {
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,.2);
 }

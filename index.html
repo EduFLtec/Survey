@@ -18,20 +18,20 @@
   <form id="survey-form" class="survey">
     <div class="survey-box" id="name-input-box">
     <label id="name-label" class="label" for="name">Name</label>
-      <input type="text" name="name" id="name" class="input" placeholder="First Last" required="">
+      <input type="text" name="name" id="name" class="input" placeholder="First Last (required)" required="">
     </div>
   <div class="survey-box" id="email-input-box">  
     <label id="email-label" class="label" for="email">Email</label>
-      <input type="email" name="email" id="email" class="input" placeholder="email@site.com" required="">
+      <input type="email" name="email" id="email" class="input" placeholder="email@site.com (required)" required="">
   </div>
   <div class="survey-box" id="age-input-box">
     <label id="number-label" class="label" for="number">Age</label>
-      <input type="number" name="age" id="number" class="input" min="7" max="110" placeholder="Age">
+      <input type="number" name="age" id="number" class="input" min="7" max="110" placeholder="Age (optional)">
   </div>
   <div class="survey-box" id="occupation-drop-down-box">
     <p>What is your current occupation?</p>
-    <select id="occupation-drop-down" class="drop-down" name="occupation" required="">
-      <option disabled="" selected="" value="">Select current occupation</option>
+    <select id="occupation-dropdown" class="drop-down" name="occupation" required="">
+      <option disabled="" selected="" value="">Select current occupation (required)</option>
       <option value="unemployed">Unemployed</option>
       <option value="part-time">Part-time worker / student</option>
       <option value="worker">Full Time Worker</option>
@@ -60,8 +60,9 @@
   </div>
   <div class="survey-box" id="feature-drop-down-box">
     <p>What was the best feature of the course?</p>
-    <select id="best-feature" class="drop-down" name="bestFeature" required="">
-      <option disabled="" selected="" value="">Select an option</option>
+    <!-- select id="dropdown" is for test validation purposes -->
+    <select id="dropdown" class="drop-down" name="bestFeature" required="">
+      <option disabled="" selected="" value="">Select an option (required)</option>
       <option value="challenges">Quizes</option>
       <option value="projects">Projects</option>
       <option value="community">Community</option>
@@ -90,13 +91,15 @@
   </div>
   <div class="survey-box" id="comments-box">
     <p>Any comments or suggestions? (Feel free to elaborate on your choices in the previous section)</p>
-    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here...(optional)"></textarea>
   </div>
   <div class="survey-box" id="submit-button-box">
-    <button type="submit" id="submit" class="submit-button">Submit</button>
+    <button type="submit" id="submit" class="btn submit-button" disabled="disabled">Submit</button>
   </div>
   </form>
   
   
 </body>
+<script src="app.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
