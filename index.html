@@ -16,19 +16,19 @@
       <p id="description" class="description">Thank you for helping us to improve the learning experience</p>
   </header>
   <form id="survey-form" class="survey">
-    <div class="name-input-box">
-    <label id="name-label" class="name-label" for="name">Name</label>
+    <div class="survey-box" id="name-input-box">
+    <label id="name-label" class="label" for="name">Name</label>
       <input type="text" name="name" id="name" class="input" placeholder="First Last" required="">
     </div>
-  <div class="email-input-box">  
-    <label id="email-label" class="email-label" for="email">Email</label>
+  <div class="survey-box" id="email-input-box">  
+    <label id="email-label" class="label" for="email">Email</label>
       <input type="email" name="email" id="email" class="input" placeholder="email@site.com" required="">
   </div>
-  <div class="age-input-box">
-    <label id="number-label" class="number-label" for="number">Age</label>
+  <div class="survey-box" id="age-input-box">
+    <label id="number-label" class="label" for="number">Age</label>
       <input type="number" name="age" id="number" class="input" min="7" max="110" placeholder="Age">
   </div>
-  <div class="occupation-drop-down-box">
+  <div class="survey-box" id="occupation-drop-down-box">
     <p>What is your current occupation?</p>
     <select id="occupation-drop-down" class="drop-down" name="occupation" required="">
       <option disabled="" selected="" value="">Select current occupation</option>
@@ -40,15 +40,15 @@
       <option value="other">Other</option>
     </select>
   </div>
-  <div class="recommendation-radio-box">
+  <div class="survey-box" id="recommendation-radio-box">
     <p>Would you recommend this course?</p>
     <label>
       <input name="user-recommend" class="radio" value="definitely" type="radio" checked="">Definitely</label>
     <label>
       <input name="user-recommend" class="radio" value="maybe" type="radio">Maybe</label>
-    <label><input name="user-recommend" value="not-sure" type="radio">Not sure</label>
+    <label><input name="user-recommend" class="radio" value="not-sure" type="radio">Not sure</label>
   </div>
-  <div class="understanding-radio-box">
+  <div class="survey-box" id="understanding-radio-box">
     <p>How much did this course improve your understanding of the topic?</p>
     <label>
       <input name="understanding" class="radio" value="not-at-all" type="radio" checked="">Not at All</label>
@@ -58,7 +58,7 @@
     <label><input name="understanding" class="radio" value="somewhat" type="radio">Somewhat</label>
     <label><input name="understanding" class="radio" value="very-much" type="radio">Very Much</label>
   </div>
-  <div class="feature-drop-down-box">
+  <div class="survey-box" id="feature-drop-down-box">
     <p>What was the best feature of the course?</p>
     <select id="best-feature" class="drop-down" name="bestFeature" required="">
       <option disabled="" selected="" value="">Select an option</option>
@@ -68,7 +68,7 @@
       <option value="feedback">Instructor Feedback</option>
     </select>
   </div>
-  <div class="improvements-checkbox-box">
+  <div class="survey-box" id="improvements-checkbox-box">
     <p>What would you like to see improved? (Check all that apply)</p>
     <label><input name="improvements" class="checkbox" value="explinations" type="checkbox">Explinations<label>
       <label>
@@ -88,11 +88,11 @@
       <label>
         <input name="improvements" class="checkbox" value="grading" type="checkbox">Grading Clarity<label>
   </div>
-  <div class="comments-box">
+  <div class="survey-box" id="comments-box">
     <p>Any comments or suggestions? (Feel free to elaborate on your choices in the previous section)</p>
     <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
   </div>
-  <div class="submit-button-box">
+  <div class="survey-box" id="submit-button-box">
     <button type="submit" id="submit" class="submit-button">Submit</button>
   </div>
   </form>
